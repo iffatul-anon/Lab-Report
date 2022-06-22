@@ -1,3 +1,4 @@
+//Write a program in C to sort elements of the array in descending order.
 #include<stdio.h>
 int main()
 {

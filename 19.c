@@ -1,3 +1,4 @@
+//Write a program in C to display the n terms of harmonic series and their sum.
 #include<stdio.h>
 
 int main(){

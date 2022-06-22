@@ -1,3 +1,9 @@
+//Write a menu driven program which has the following options. 
+//i )Factorial
+//ii) Prime or not 
+//iii) odd
+//iv) Even
+//v) Exit
 #include<stdio.h>
 
 int main(){

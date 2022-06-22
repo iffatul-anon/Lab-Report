@@ -1,3 +1,4 @@
+//Enter a six digit number and print the number in reverse order and find the sum of those number.
 #include<stdio.h>
 
 int main(){

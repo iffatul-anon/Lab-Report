@@ -1,3 +1,4 @@
+//Write a program in C to find the sum of the series 1 +11 + 111 + 1111 + .. n terms.
 #include<stdio.h>
 
 int main(){
