@@ -32,7 +32,7 @@ int main(){
     printf("\n");
 
     for(int i=0;i<n2;i++){
-        for(int j=1;j<n*2;j++){
+        for(int j=i+1;j<n2;j++){
             if(c[i]<c[j]){
                 int tem = c[i];
                 c[i] = c[j];
@@ -42,7 +42,7 @@ int main(){
     }
 
     printf("Merge Array Sorted in Descending Order : ");
-    for(int i=1;i<n2;i++){
+    for(int i=0;i<n2;i++){
         printf("%d ",c[i]);
     }
     printf("\n");
