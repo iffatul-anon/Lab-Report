@@ -11,7 +11,7 @@ int main(){
     int number,option,count=0;
     double number2,factorial=1;
 
-    printf("Select a option:\n1. Factorial\n2. Prime\n3. ODD\n4. EVEN\n");
+    printf("1. Factorial\n2. Prime\n3. ODD\n4. EVEN\nSelect a option: ");
     scanf("%d",&option);
 
     switch (option)
@@ -20,9 +20,9 @@ int main(){
     printf("Enter a number:");
     scanf("%lf",&number2);
     for(int i=1;i<=number2;i++){
-        factorial = factorial*i;
+    factorial = factorial*i;
     } 
-    printf("Factorial %lf = %lf\n",number2,factorial);
+    printf("Factorial %.2lf = %.2lf\n",number2,factorial);
         break;
     
     case 2: 
@@ -47,7 +47,10 @@ int main(){
     scanf("%d",&number);
     if(number%2 != 0){
         printf("%d is a ODD number\n",number);
-    } 
+    }
+    else{
+        printf("%d is not a ODD number\n",number);
+    }
         break;
 
     case 4: 
@@ -55,6 +58,9 @@ int main(){
     scanf("%d",&number);
     if(number%2 == 0){
         printf("%d is a EVEN number\n",number);
+    }
+    else{
+        printf("%d is not a ODD number\n",number);
     }
         break;
     
