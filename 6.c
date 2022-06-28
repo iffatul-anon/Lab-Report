@@ -2,7 +2,7 @@
 #include<stdio.h>
 
 int main(){
-    int n;
+    int n,flag;
 
     printf("Enter size:");
     scanf("%d",&n);
@@ -21,14 +21,24 @@ int main(){
     printf("\n");
 
     for(int i=0;i<n;i++){
+        flag=1;
         for(int j=i+1;j<n;j++){
             if(a[i]==a[j]){
+                flag=0;
                 for(int k=j;k<n-1;k++){
                     a[k]=a[k+1];
                 }
                 n--;
                 j--;
             }
+        }
+        if(flag==0){
+            for(int k=i;k<n-1;k++){
+                a[k]=a[k+1];
+            }
+            n--;
+            i--;
+
         }
     }
 
